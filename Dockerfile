@@ -28,5 +28,5 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
 
 # install bundler
 ENV BUNDLER_VERSION 1.10.6
-RUN gem install bundler --version "$RAILS_VERSION"
+RUN gem install bundler --version "$BUNDLER_VERSION"
 
