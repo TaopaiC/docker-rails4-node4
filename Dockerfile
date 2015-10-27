@@ -25,3 +25,8 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
   && rm "node-v$NODE_VERSION-linux-x64.tar.gz" SHASUMS256.txt.asc
 
+
+# install bundler
+ENV BUNDLER_VERSION 1.10.6
+RUN gem install bundler --version "$RAILS_VERSION"
+
