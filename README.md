@@ -1,0 +1,1 @@
+use rails:4.2 base image and build steps from node:4.2 .
